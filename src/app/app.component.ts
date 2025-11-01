@@ -6,7 +6,7 @@ import {NavigationbarComponent} from './navigationbar/navigationbar.component';
 @Component({
   selector: 'app-root',
 
-  imports: [RouterOutlet, HeroesComponent, NavigationbarComponent],
+  imports: [ HeroesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
