@@ -1,12 +1,20 @@
 import { Component } from '@angular/core';
+import { Hero } from '../hero';
+import {UpperCasePipe} from '@angular/common';
+import {FormsModule} from '@angular/forms';
 
 @Component({
   selector: 'app-heroes',
-  imports: [],
   templateUrl: './heroes.component.html',
-  styleUrl: './heroes.component.css'
+  imports: [
+    UpperCasePipe,
+    FormsModule
+  ],
+  styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent {
-  hero = 'Windstorm';
-
+  hero: Hero = {
+    id: 1,
+    name: 'Windstorm'
+  };
 }
