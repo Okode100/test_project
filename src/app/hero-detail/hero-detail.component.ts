@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {NgForOf, NgIf, UpperCasePipe} from '@angular/common';
-import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {Hero} from '../hero';
 
 @Component({
@@ -9,7 +9,8 @@ import {Hero} from '../hero';
     NgForOf,
     NgIf,
     ReactiveFormsModule,
-    UpperCasePipe
+    UpperCasePipe,
+    FormsModule
   ],
   templateUrl: './hero-detail.component.html',
   styleUrl: './hero-detail.component.css'

@@ -25,6 +25,7 @@ import {HEROES} from '../mock-heroes';
 export class HeroesComponent {
   heroes = HEROES;
   selectedHero?: Hero;
+  protected hero: string | null | undefined;
 
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
